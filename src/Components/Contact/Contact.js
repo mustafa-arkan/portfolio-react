@@ -3,6 +3,7 @@ import emailjs from "@emailjs/browser";
 import styled from "styled-components";
 import './Contact.css'
 
+
 import logoform from '../../Images/form.png'
 
 
@@ -14,10 +15,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "SERVICE_ID",
-        "TEMPLATE_ID",
+        "service_hd7xwlk",
+        "template_xvr1ed9",
         form.current,
-        "USER_ID"
+        "thpXIIXPuZ1tqz1r4"
       )
       .then(
         (result) => {
@@ -35,27 +36,28 @@ const Contact = () => {
 
 
 <div className="contact">
-<h1   className="text-5xl font-bold text-orange-600 ">Feel Free to Contact Me.</h1>
+<h1   className="text-5xl font-bold text-orange-600 lg:ml-96">Feel Free to Contact Me.</h1>
 
     
-    <StyledContactForm>
-      <form   className=" hero-content    grid grid-cols-1   sm:grid-cols-1   sm:ml-3    md:grid-cols-2 lg:grid-cols-3 "    ref={form} onSubmit={sendEmail}>
+    <StyledContactForm className="lg:ml-96">
+      <form   className=" hero-content    grid grid-cols-1   sm:grid-cols-1      md:grid-cols-2 lg:grid-cols-2 "    ref={form} onSubmit={sendEmail}>
         
         
-
+{/*  sm:ml-3 */}
 
 
 <div className="hero-content flex-col lg:flex-row-reverse  ">
     <div className="text-center      ">
 
-
+    
       {/* lg:text-left */}
     <img src={logoform} alt="form" className="max-w-sm rounded-lg shadow-2xl    " />
     </div>
+  
     <div className="  text-stone-200   card flex-shrink-0 w-full max-w-sm shadow-2xl ">
       
-
-
+    
+   
 
       <label>Name</label>
         <input type="text" name="user_name" />

@@ -1,11 +1,14 @@
 import React from 'react';
 import { Typewriter } from 'react-simple-typewriter';
+import About from '../Aboutme/About';
 import Aboutme from '../Aboutme/Aboutme';
+// import AppFooter from '../AppFooter/AppFooter';
 
 import Contact from '../Contact/Contact';
 import Counter from '../Counter/Counter';
 
 import Projects from '../Projects/Projects';
+import Skills from '../Skills/Skills';
 
 import './Home.css'
 
@@ -36,7 +39,7 @@ const Home = () => {
 
 
 
-      <a href="Resume.pdf" 
+      {/* <a href="Resume.pdf" 
 
 download="Resume Resume.pdf"
 
@@ -45,16 +48,39 @@ download="Resume Resume.pdf"
 <button className="btn btn-primary   bg-orange-600 text-stone-200">Resume</button>
 
 
-</a>
+</a> */}
+<a
+          className="p-2 cursor-pointer rounded-lg relative px-10 w-max flex items-center mt-4 space-x-4 border bg-slate-200"
+          href={'https://drive.google.com/file/d/1bxW6LyRZge0qBJPJegq1vv516rKVWMhD/view?usp=share_link'}
+          target={'_blanck'}
+          rel="noreferrer"
+        >
+
+
+
+
+
+            
+            
+          <div>Resume</div>
+          <img
+            className="h-6 w-6"
+            src="https://img.icons8.com/material-outlined/48/000000/link--v1.png"
+            alt=""
+          ></img>
+        </a>
  
     </div>
   </div>
 </div>
 <Counter></Counter>
-<Projects></Projects>
-<Aboutme></Aboutme>
-<Contact></Contact>
+<Skills></Skills>
 
+<Projects></Projects>
+{/* <Aboutme></Aboutme> */}
+<About></About>
+<Contact></Contact>
+{/* <AppFooter></AppFooter> */}
 
         </div>
     );

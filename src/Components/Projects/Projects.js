@@ -11,11 +11,11 @@ const Projects = () => {
       
         <div  className=" project  ">
        <h1   className="text-5xl font-bold text-orange-600 text-center mt-4 mb-4">Projects</h1>
-          {/* flex flex-row items-center justify-center w-full mx-auto mt-32  sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 */}
+          
          
-          <div className='sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3  grid grid-cols-1  gap-10'>
+          <div className='grid grid-cols-1  ml-12   sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3  '>
 
-          <div className="card w-96 glass ml-8">
+          <div className="card w-96 glass  ">
   <figure><img src={p1} alt="car!"/></figure>
   <div className="card-body">
     <h2 className="card-title text-stone-200">Bidyapith Academy</h2>
@@ -37,7 +37,7 @@ const Projects = () => {
 
            {/*  */}
 
-           <div className="card w-96 glass ">
+           <div className="card w-96 glass mt-4">
   <figure><img src={p2} alt="car!"/></figure>
   <div className="card-body">
     <h2 className="card-title text-stone-200">Fitbazz</h2>
@@ -53,7 +53,7 @@ const Projects = () => {
 </div>
 {/*  */}
 
-<div className="card w-96 glass">
+<div className="card w-96 glass mt-4">
   <figure><img src={p3} alt="car!"/></figure>
   <div className="card-body">
     <h2 className="card-title text-stone-200">Eat-Code-Gym</h2>
