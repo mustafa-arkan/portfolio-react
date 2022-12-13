@@ -1,10 +1,36 @@
 import React from 'react';
 
+
+
 const Footer = () => {
     return (
-        <div>
-            this is footer
-        </div>
+        <footer
+            
+        className="p-10 ">
+            <div className='footer bg-white'>
+                <div>
+                    <span className="footer-title">Products</span>
+                  <p>Brands</p>
+                    <p>Categories</p>
+                    <p>Advertisement</p>
+                    <p>Buy & Sale</p>
+                </div>
+                <div>
+                    <span className="footer-title">products</span>
+                    <p>About</p>
+                    <p>Contact</p>
+                    
+                    <p>others</p>
+                </div>
+                <div>
+                    <span className="footer-title">Legal</span>
+                    <p>Terms of use</p>
+                    <p>Privacy policy</p>
+                    <p>Cookie policy</p>
+                </div>
+            </div>
+           
+        </footer>
     );
 };
 

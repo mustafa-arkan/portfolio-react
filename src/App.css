@@ -1,6 +1,10 @@
 .appfile{
-  background-image: url(./Images/bg10.jpg);
-  background-repeat: no-repeat;
+  /* background-image: url(./Images/bg9.jpg); */
+  /* background-image: url(./Images/black.jpg); */
+  /* background-color: black; */
+  /* background-repeat: no-repeat; */
+  background-color:#212121 ;
+  overflow-x: hidden;
 
   /* background-image: linear-gradient(to right, #fffbd5, #b20a2c); */
   /* background-image: linear-gradient(-225deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%); */
